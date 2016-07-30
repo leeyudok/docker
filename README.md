@@ -6,15 +6,17 @@
 
 ## Docker: Remove all images and containers
 
-<pre><code>
+```sh
 #!/bin/bash
 # Delete all containers
 docker rm $(docker ps -a -q)
 # Delete all images
 docker rmi $(docker images -q)
-</code></pre>
+```
 
-## Installing Tomcat with Docker
+## tomcat
+
+### Installing Tomcat with Docker
 <pre><code>
 docker pull leeyudok/tomcat
 
