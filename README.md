@@ -1,9 +1,8 @@
 # Docker
 
 ## getstarted
-<pre><code>
-(https://docs.docker.com/engine/getstarted/step_six/)
-</code></pre>
+[getstarted](https://docs.docker.com/engine/getstarted/step_six/)
+
 
 ## Docker: Remove all images and containers
 
