@@ -15,8 +15,19 @@ docker rm $(docker ps -a -q)
 docker rmi $(docker images -q)
 </code></pre>
 
+## Installing Tomcat with Docker
+<pre><code>
+docker pull leeyudok/tomcat
 
-## Installing Jenkins with Docker
+docker run --name tomcat -d -p 48090:8080 -t leeyudok/tomcat 
+
+http://192.168.99.100:48090
+</code></pre>
+
+
+## Jenkins
+
+### Installing Jenkins with Docker
 <pre><code>
 docker pull leeyudok/jenkins
 
@@ -25,7 +36,7 @@ docker run --name jenkins -d -p 48080:8080 -v $PWD/Documents/Docker/jenkins:/var
 http://192.168.99.100:48080
 </code></pre>
 
-Addtionally, you can configure nginx as a reverse proxy to your Jenkins instance, e.g.
+### Addtionally, you can configure nginx as a reverse proxy to your Jenkins instance, e.g.
 <pre><code>
 upstream app {
     server 127.0.0.1:49001;
