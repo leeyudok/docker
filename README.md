@@ -20,9 +20,9 @@ docker rmi $(docker images -q)
 <pre><code>
 docker pull leeyudok/tomcat
 
-docker run --name tomcat -d -p 48090:8080 -t leeyudok/tomcat 
+docker run --name tomcat -d -p 8080:8080 -t leeyudok/tomcat 
 
-http://192.168.99.100:48090
+http://localhost:8080
 </code></pre>
 
 
